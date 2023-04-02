@@ -729,6 +729,11 @@ namespace NetBarcode
             return image;
         }
 
+        public string GetBinaryRepresentation()
+        {
+            return _encodedData;
+        }
+
         private Font GetEffeciveFont()
         {
             if (!_showLabel)
